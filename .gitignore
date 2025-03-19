@@ -4,7 +4,7 @@
 #
 .utmp/
 /[Ll]ibrary/
-!*/LastSceneManagerSetup.txt
+!/[Ll]ibrary/LastSceneManagerSetup.txt
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/
