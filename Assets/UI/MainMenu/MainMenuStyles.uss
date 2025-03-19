@@ -1,0 +1,38 @@
+.header {
+    font-size: 96px;
+    color: rgb(185, 200, 52);
+    -unity-font-style: bold;
+    -unity-font-definition: url("project://database/Assets/Fonts/Neuropol.otf?fileID=12800000&guid=9c6a0537aaad64244a9f3fdde09b9f6b&type=3#Neuropol");
+    align-self: center;
+}
+
+.button {
+    font-size: 48px;
+    -unity-font-style: normal;
+    color: rgb(168, 0, 0);
+    width: 480px;
+    height: auto;
+    align-self: center;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    background-color: rgba(250, 195, 64, 0.75);
+    margin-top: 12px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    -unity-font-definition: url("project://database/Assets/Fonts/Neuropol.otf?fileID=12800000&guid=9c6a0537aaad64244a9f3fdde09b9f6b&type=3#Neuropol");
+}

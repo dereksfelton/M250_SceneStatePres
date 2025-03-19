@@ -1,0 +1,9 @@
+.text {
+    -unity-font-definition: url("project://database/Assets/Fonts/Neuropol.otf?fileID=12800000&guid=9c6a0537aaad64244a9f3fdde09b9f6b&type=3#Neuropol");
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+}
+
+.value {
+    color: rgb(255, 255, 0);
+}
