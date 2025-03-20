@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "PlayerStateData", menuName = "Game State/PlayerStateData")]
-public class __PlayerStateData : ScriptableObject, IPlayerStateListener
+public class __PlayerStateData : ScriptableObject, __IPlayerStateListener
 {
     public Vector3 position;
     public Quaternion rotation;
@@ -11,15 +11,15 @@ public class __PlayerStateData : ScriptableObject, IPlayerStateListener
     private void OnEnable()
     {
         // Subscribe to player state and scene change events
-        PlayerStateEvents.OnSaveState += SaveState;
-        PlayerStateEvents.OnLoadState += LoadState;
+        __PlayerStateEvents.OnSaveState += SaveState;
+        __PlayerStateEvents.OnLoadState += LoadState;
     }
 
     private void OnDisable()
     {
         // Unsubscribe from events
-        PlayerStateEvents.OnSaveState -= SaveState;
-        PlayerStateEvents.OnLoadState -= LoadState;
+        __PlayerStateEvents.OnSaveState -= SaveState;
+        __PlayerStateEvents.OnLoadState -= LoadState;
     }
 
     public void SaveState(Transform playerTransform, Rigidbody playerRigidbody)
