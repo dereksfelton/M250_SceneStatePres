@@ -1,12 +1,15 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class PickupController : MonoBehaviour
 {
-    public int pickupValue = 10;
+    [SerializeField] private int pickupValue = 10;
+    public int PickupValue { get => pickupValue; set => pickupValue = value; }
 
     private UIDocument uiHUD;
     private Label lblScoreValue;
+
 
     void Start()
     {
@@ -20,7 +23,7 @@ public class PickupController : MonoBehaviour
         int score = int.Parse(lblScoreValue.text);
 
         // add this pickup's value to score, then update the HUD score value
-        lblScoreValue.text = (score + pickupValue).ToString();
+        lblScoreValue.text = (score + PickupValue).ToString();
 
         gameObject.SetActive(false);
     }

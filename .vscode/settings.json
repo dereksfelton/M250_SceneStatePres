@@ -56,6 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "M250_SceneStatePres.sln",
-    "git.ignoreLimitWarning": true
+    "dotnet.defaultSolution": "M250_SceneStatePres.sln"
 }
